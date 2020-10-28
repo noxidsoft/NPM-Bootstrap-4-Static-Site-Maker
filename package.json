@@ -10,7 +10,7 @@
     "lint": "eslint src/js",
     "uglify": "mkdirp dist/js -p && uglifyjs src/js/*.js -m -o dist/js/app.js && uglifyjs src/js/*.js -m -c -o dist/js/app.min.js",
     "copyJS-win": "copyfiles -f node_modules/jquery/dist/jquery.min.js node_modules/bootstrap/dist/js/*.js dist/js",
-    "copyJS-bash": "cp node_modules/popper.js/dist/popper.min.js node_modules/jquery/dist/jquery.min.js node_modules/bootstrap/dist/js/*.js dist/js",
+    "copyJS-bash": "cp node_modules/@popperjs/core/dist/umd/popper.min.js node_modules/jquery/dist/jquery.min.js node_modules/bootstrap/dist/js/*.js dist/js",
     "copyCSS-win": "copyfiles -f node_modules/bootstrap/dist/css/*.css dist/css",
     "copyCSS-bash": "cp node_modules/bootstrap/dist/css/*.css dist/css",
     "copyFonts": "mkdirp dist/fonts -p && copyfiles -f node_modules/bootstrap/dist/fonts/*.* dist/fonts",
@@ -24,14 +24,12 @@
   "dependencies": {
     "@popperjs/core": "^2.5.3",
     "autoprefixer": "^10.0.1",
-    "boostrap": "^2.0.0",
     "bootstrap": "^4.5.3",
     "copyfiles": "^2.4.0",
     "eslint": "^7.12.1",
     "imagemin-cli": "^6.0.0",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
-    "popper.js": "^1.16.0",
     "postcss": "^8.1.4",
     "postcss-cli": "^8.1.0",
     "uglify-js": "^3.11.4"
