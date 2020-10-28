@@ -1,8 +1,8 @@
 {
   "name": "bootstrap4",
   "version": "1.0.0",
-  "description": "static template with bootstrap4",
-  "private": true,
+  "description": "Static template with bootstrap4",
+  "private": false,
   "main": "index.js",
   "scripts": {
     "scss": "node-sass --output-style compressed -o dist/css src/scss",
@@ -19,7 +19,7 @@
     "dist-win": "npm run scss && npm run uglify & npm run copyJS && npm run copyCSS",
     "dist-bash": "npm run scss && npm run uglify && npm run copyCSS-bash && npm run copyJS-bash && npm run copyHTML-bash && npm run copyIMG-bash"
   },
-  "author": "Noel Dixon @ Kitrisha",
+  "author": "Noel Dixon @ Noxidsoft",
   "license": "ISC",
   "dependencies": {
     "@popperjs/core": "^2.5.3",
